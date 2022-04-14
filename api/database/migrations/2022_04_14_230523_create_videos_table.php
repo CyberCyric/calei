@@ -16,13 +16,17 @@ class CreateVideosTable extends Migration
         Schema::create('videos', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('performer');
-            $table->string('description');
-            $table->string('location');
-            $table->string('date');
-            $table->string('thumbnail');
-            $table->string('language');
+            $table->unsignedBigInteger('performer_id');
+            $table->string('description')->nullable();;
+            $table->string('location')->nullable();;
+            $table->string('date')->nullable();;
+            $table->string('thumbnail')->nullable();;
+            $table->unsignedBigInteger('language_id');
             $table->string('url');
+            $table->unsignedBigInteger('source_id');
+            $table->foreign('performer_id')->references('id')->on('performers');
+            $table->foreign('language_id')->references('id')->on('languages');
+            $table->foreign('source_id')->references('id')->on('sources');
             $table->timestamps();
         });
     }
