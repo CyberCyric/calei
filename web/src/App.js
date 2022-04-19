@@ -17,9 +17,9 @@ function App() {
             <Header />
             <Router>
                 <Routes>
-                    <Route path="*" element={<Navigate to="/showcase" replace />} />
+                    <Route path="/" element={<Navigate to="/showcase" replace />} />
                 </Routes>
-                <ShowcasePage />
+                {/* <ShowcasePage /> */}
             </Router>
             <Footer />
         </>

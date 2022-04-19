@@ -20,7 +20,8 @@ class DatabaseSeeder extends Seeder
             TagSeeder::class,
             PerformerSeeder::class,
             VideoSeeder::class,
-            CommentSeeder::class
+            CommentSeeder::class,
+            TagVideoSeeder::class,
         ]);
     }
 }

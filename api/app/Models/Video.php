@@ -4,8 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use phpDocumentor\Reflection\DocBlock\Tag;
-
 class Video extends Model
 {
     use HasFactory;
@@ -13,6 +11,11 @@ class Video extends Model
     public function resourceType()
     {
         return $this->belongsTo(ResourceType::class);
+    }
+
+    public function performer()
+    {
+        return $this->belongsTo(Performer::class);
     }
 
     public function tags()

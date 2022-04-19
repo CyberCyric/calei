@@ -20,6 +20,7 @@ class VideoSeeder extends Seeder
             'description' => 'yada yada',
             'language_id' => '1',
             'url' => 'https://www.youtube.com/watch?v=o7_Lfa2jMk0',
+            'video_code' => 'o7_Lfa2jMk0',
             'source_id' => '1'
         ]);
         DB::table('videos')->insert([
@@ -28,6 +29,7 @@ class VideoSeeder extends Seeder
             'description' => 'yada yada',
             'language_id' => '1',
             'url' => 'https://www.youtube.com/watch?v=3N1In1-QtNY',
+            'video_code' => '3N1In1-QtNY',
             'source_id' => '1'
         ]);
     }

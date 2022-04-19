@@ -14,8 +14,9 @@ class VideoController extends Controller
      */
     public function index()
     {
-        $videos = Video::where('active',true);
-        return view('videos.index', compact('videos',$videos));
+        $videos = Video::where('deleted',false)->with('performer')->with('tags')->orderBy('title')->get();
+        return response()->json($videos);
+
     }
 
     /**
