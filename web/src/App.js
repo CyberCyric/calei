@@ -17,9 +17,16 @@ function App() {
             <Header />
             <Router>
                 <Routes>
-                    <Route path="/" element={<Navigate to="/showcase" replace />} />
+                    <Route path="/" element={<ShowcasePage />}>
+                        {/* 
+                        <Route path="teams" element={<Teams />}>
+                            <Route path=":teamId" element={<Team />} />
+                            <Route path="new" element={<NewTeamForm />} />
+                            <Route index element={<LeagueStandings />} />
+                        </Route>
+                        */}
+                    </Route>
                 </Routes>
-                {/* <ShowcasePage /> */}
             </Router>
             <Footer />
         </>

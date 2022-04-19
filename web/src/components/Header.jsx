@@ -14,7 +14,7 @@ const Header = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Form.Control type="text" placeholder="Buscador" className="header-search-box" />
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <h2 className="px-2"><a href=""><BiUser /></a></h2>
+                        <h2 className="px-2"><a href="" className="secondary"><BiUser /></a></h2>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
