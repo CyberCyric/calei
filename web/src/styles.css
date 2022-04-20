@@ -47,9 +47,15 @@ input.header-search-box{
 }
 
 /************* VideoBox **********/
-div.video-box-container{
-    margin: 1%;
-    background-color: white;
+div.video-box-container {
+    background-color: #FFFFFF; 
+    padding-left: 0px;   
+    padding-right: 0px;
+    margin: 10px;
+}
+div.video-box-container img{
+    width: 100%;
+    height: auto;
 }
 
 div.video-box-container h6.performer-name{
@@ -69,10 +75,15 @@ div.video-box-container h4.video-title a:hover{
     color: gold;
     text-decoration: none;
 }
+div.div.video-box-container img{
+    height: auto;
+    width: 100%;
+}
 .video-box-tag{
     font-size: 0.6em;
     font-weight: 400;
 }
 .video-box-container:hover{
-    background-color: #EBEBEB;
+    background-color: #EEE;
+    cursor:pointer;
 }

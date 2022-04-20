@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import ShowcasePage from "./components/ShowcasePage";
+import Video from "./components/Video";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,6 +27,7 @@ function App() {
                         </Route>
                         */}
                     </Route>
+                    <Route path="/video" element={<Video />}></Route>
                 </Routes>
             </Router>
             <Footer />

@@ -31,12 +31,14 @@ const ShowcasePage = () => {
             <div className="container sectionTopMargin">
                 <div>
                 </div>
-                <div className="d-flex">
+                <div className="d-flex ">
+                <div className="row d-flex justify-content-evenly">
                     {videos.length > 0 ? (
-                        videos.map((video) => <VideoBox key={video.id} video={video} />)
+                            videos.map((video) => <VideoBox key={video.id} video={video} />)
                     ) : (
                         <span>No hay resultados</span>
                     )}
+                    </div>
                 </div>
                 <div className="d-flex flex-row">
                 </div>
